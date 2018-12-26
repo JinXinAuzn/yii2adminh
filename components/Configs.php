@@ -77,10 +77,10 @@ class Configs extends \jx\adminh\BaseObject
     /**
      * @var string Menu table name.
      */
-    public $userTable = '{{%user}}';
+    public $userTable = '{{%master}}';
 
     /**
-     * @var integer Default status user signup. 10 mean active.
+     * @var integer Default status master signup. 10 mean active.
      */
     public $defaultUserStatus = 10;
 

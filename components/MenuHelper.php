@@ -7,7 +7,7 @@ use yii\caching\TagDependency;
 use jx\adminh\models\Menu;
 
 /**
- * MenuHelper used to generate menu depend of user role.
+ * MenuHelper used to generate menu depend of master role.
  * Usage
  *
  * ```
@@ -15,7 +15,7 @@ use jx\adminh\models\Menu;
  * use yii\bootstrap\Nav;
  *
  * echo Nav::widget([
- *    'items' => MenuHelper::getAssignedMenu(Yii::$app->user->id)
+ *    'items' => MenuHelper::getAssignedMenu(Yii::$app->master->id)
  * ]);
  * ```
  *
@@ -33,7 +33,7 @@ use jx\adminh\models\Menu;
  *    ]
  * }
  *
- * $items = MenuHelper::getAssignedMenu(Yii::$app->user->id, null, $callback);
+ * $items = MenuHelper::getAssignedMenu(Yii::$app->master->id, null, $callback);
  * ```
  *
  * @author Misbahul D Munir <misbahuldmunir@gmail.com>
@@ -42,7 +42,7 @@ use jx\adminh\models\Menu;
 class MenuHelper
 {
     /**
-     * Use to get assigned menu of user.
+     * Use to get assigned menu of master.
      * @param mixed $userId
      * @param integer $root
      * @param \Closure $callback use to reformat output.

@@ -11,7 +11,7 @@ use yii\di\Instance;
 /**
  * Access Control Filter (ACF) is a simple authorization method that is best used by applications that only need some simple access control.
  * As its name indicates, ACF is an action filter that can be attached to a controller or a module as a behavior.
- * ACF will check a set of access rules to make sure the current user can access the requested action.
+ * ACF will check a set of access rules to make sure the current master can access the requested action.
  *
  * To use AccessControl, declare it in the application config as behavior.
  * For example.
@@ -23,7 +23,7 @@ use yii\di\Instance;
  * ]
  * ```
  *
- * @property User $user
+ * @property User $master
  *
  * @author Misbahul D Munir <misbahuldmunir@gmail.com>
  * @since 1.0
@@ -31,7 +31,7 @@ use yii\di\Instance;
 class AccessControl extends \yii\base\ActionFilter
 {
     /**
-     * @var User User for check access.
+     * @var User Master for check access.
      */
     private $_user = 'user';
     /**
@@ -40,7 +40,7 @@ class AccessControl extends \yii\base\ActionFilter
     public $allowActions = [];
 
     /**
-     * Get user
+     * Get master
      * @return User
      */
     public function getUser()
@@ -52,7 +52,7 @@ class AccessControl extends \yii\base\ActionFilter
     }
 
     /**
-     * Set user
+     * Set master
      * @param User|string $user
      */
     public function setUser($user)
@@ -74,11 +74,11 @@ class AccessControl extends \yii\base\ActionFilter
     }
 
     /**
-     * Denies the access of the user.
-     * The default implementation will redirect the user to the login page if he is a guest;
-     * if the user is already logged, a 403 HTTP exception will be thrown.
-     * @param  User $user the current user
-     * @throws ForbiddenHttpException if the user is already logged in.
+     * Denies the access of the master.
+     * The default implementation will redirect the master to the login page if he is a guest;
+     * if the master is already logged, a 403 HTTP exception will be thrown.
+     * @param  User $user the current master
+     * @throws ForbiddenHttpException if the master is already logged in.
      */
     protected function denyAccess($user)
     {

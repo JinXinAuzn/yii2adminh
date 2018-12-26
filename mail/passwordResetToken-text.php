@@ -2,9 +2,9 @@
 use yii\helpers\Url;
 
 /* @var $this yii\web\View */
-/* @var $user jx\adminh\models\User */
+/* @var $user jx\adminh\models\Master */
 
-$resetLink = Url::to(['user/reset-password','token'=>$user->password_reset_token], true);
+$resetLink = Url::to(['master/reset-password','token'=>$user->password_reset_token], true);
 ?>
 Hello <?= $user->username ?>,
 

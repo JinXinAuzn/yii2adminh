@@ -3,7 +3,7 @@
 namespace jx\adminh\models\form;
 
 use Yii;
-use jx\adminh\models\User;
+use jx\adminh\models\Master;
 use yii\base\Model;
 
 /**
@@ -47,7 +47,7 @@ class ChangePassword extends Model
      */
     public function validatePassword()
     {
-        /* @var $user User */
+        /* @var $user Master */
         $user = Yii::$app->user->identity;
         if (!$user || !$user->validatePassword($this->oldPassword)) {
             $this->addError('oldPassword', 'Incorrect old password.');
@@ -57,12 +57,12 @@ class ChangePassword extends Model
     /**
      * Change password.
      *
-     * @return User|null the saved model or null if saving fails
+     * @return Master|null the saved model or null if saving fails
      */
     public function change()
     {
         if ($this->validate()) {
-            /* @var $user User */
+            /* @var $user Master */
             $user = Yii::$app->user->identity;
             $user->setPassword($this->newPassword);
             $user->generateAuthKey();

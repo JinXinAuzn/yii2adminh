@@ -16,7 +16,7 @@ use yii\helpers\Inflector;
  * 'controllerMap' => [
  *     'assignment' => [
  *         'class' => 'jx\adminh\controllers\AssignmentController',
- *         'userClassName' => 'app\models\User',
+ *         'userClassName' => 'app\models\Master',
  *         'idField' => 'id'
  *     ]
  * ],
@@ -61,7 +61,7 @@ class Module extends \yii\base\Module
      * @see [[menus]]
      */
     private $_coreItems = [
-        'user' => 'Users',
+        'master' => 'Masters',
         'assignment' => 'Assignments',
         'role' => 'Roles',
         'permission' => 'Permissions',
@@ -99,7 +99,7 @@ class Module extends \yii\base\Module
             ];
         }
 
-        //user did not define the Navbar?
+        //master did not define the Navbar?
         if ($this->navbar === null && Yii::$app instanceof \yii\web\Application) {
             $this->navbar = [
                 ['label' => Yii::t('rbac-admin', 'Help'), 'url' => ['default/index']],
@@ -124,7 +124,7 @@ class Module extends \yii\base\Module
 
             $config = components\Configs::instance();
             $conditions = [
-                'user' => $config->db && $config->db->schema->getTableSchema($config->userTable),
+                'master' => $config->db && $config->db->schema->getTableSchema($config->userTable),
                 'assignment' => ($userClass = Yii::$app->getUser()->identityClass) && is_subclass_of($userClass, 'yii\db\BaseActiveRecord'),
                 'menu' => $config->db && $config->db->schema->getTableSchema($config->menuTable),
             ];
@@ -137,7 +137,7 @@ class Module extends \yii\base\Module
                 $this->_normalizeMenus[$id] = ['label' => Yii::t('rbac-admin', Inflector::humanize($id)), 'url' => [$mid . $id]];
             }
 
-            // user configure menus
+            // master configure menus
             foreach ($this->_menus as $id => $value) {
                 if (empty($value)) {
                     unset($this->_normalizeMenus[$id]);

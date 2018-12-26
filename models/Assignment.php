@@ -15,11 +15,11 @@ use Yii;
 class Assignment extends \jx\adminh\BaseObject
 {
     /**
-     * @var integer User id
+     * @var integer Master id
      */
     public $id;
     /**
-     * @var \yii\web\IdentityInterface User
+     * @var \yii\web\IdentityInterface Master
      */
     public $user;
 
@@ -34,7 +34,7 @@ class Assignment extends \jx\adminh\BaseObject
     }
 
     /**
-     * Grands a roles from a user.
+     * Grands a roles from a master.
      * @param array $items
      * @return integer number of successful grand
      */
@@ -57,7 +57,7 @@ class Assignment extends \jx\adminh\BaseObject
     }
 
     /**
-     * Revokes a roles from a user.
+     * Revokes a roles from a master.
      * @param array $items
      * @return integer number of successful revoke
      */

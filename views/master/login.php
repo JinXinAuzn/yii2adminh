@@ -40,7 +40,7 @@ LoginAsset::register($this);
 				<?= $form->field($model, 'username')->input('text', ['placeholder' => '账号']) ?>
 				<?= $form->field($model, 'password')->passwordInput(['placeholder' => '密码']) ?>
 				<?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
-					'captchaAction' => '/adminh/user/captcha',
+					'captchaAction' => '/adminh/master/captcha',
 					'imageOptions' => ['class' => 'img-thumbnail'],
 					'options' => ['class' => 'captchas', 'placeholder' => '验证码'],
 					'template' => '{input}{image}',

@@ -39,5 +39,5 @@
 				<li class="J_tabCloseOther"><a>关闭其他选项卡</a></li>
 			</ul>
 		</div>
-		<?= yii\helpers\Html::a('<i class="fa fa fa-sign-out"></i>' . Yii::t('rbac-admin', 'Logout'), ['/adminh/user/logout'], ['class' => 'roll-nav roll-right J_tabExit', 'data-method' => 'post']) ?>
+		<?= yii\helpers\Html::a('<i class="fa fa fa-sign-out"></i>' . Yii::t('rbac-admin', 'Logout'), ['/adminh/master/logout'], ['class' => 'roll-nav roll-right J_tabExit', 'data-method' => 'post']) ?>
 	</div>

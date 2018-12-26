@@ -3,15 +3,15 @@
 
  Source Server         : mysql
  Source Server Type    : MySQL
- Source Server Version : 50641
+ Source Server Version : 50724
  Source Host           : 127.0.0.1:3306
  Source Schema         : yii2advancedh
 
  Target Server Type    : MySQL
- Target Server Version : 50641
+ Target Server Version : 50724
  File Encoding         : 65001
 
- Date: 19/12/2018 16:30:03
+ Date: 26/12/2018 18:00:00
 */
 
 SET NAMES utf8mb4;
@@ -57,82 +57,89 @@ CREATE TABLE `auth_item`  (
 -- Records of auth_item
 -- ----------------------------
 INSERT INTO `auth_item` VALUES ('/*', 2, NULL, NULL, NULL, 1545042909, 1545042909);
-INSERT INTO `auth_item` VALUES ('/adminh/*', 2, NULL, NULL, NULL, 1545208171, 1545208171);
-INSERT INTO `auth_item` VALUES ('/adminh/assignment/*', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/assignment/assign', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/assignment/index', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/assignment/revoke', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/assignment/view', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/base/*', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/default/*', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/default/index', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/logs/*', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/logs/index', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/main/*', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/main/index', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/menu/*', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/menu/create', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/menu/delete', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/menu/index', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/menu/update', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/menu/view', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/permission/*', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/permission/assign', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/permission/create', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/permission/delete', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/permission/index', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/permission/remove', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/permission/update', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/permission/view', 2, NULL, NULL, NULL, 1545208169, 1545208169);
-INSERT INTO `auth_item` VALUES ('/adminh/role/*', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/role/assign', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/role/create', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/role/delete', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/role/index', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/role/remove', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/role/update', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/role/view', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/route/*', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/route/assign', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/route/create', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/route/index', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/route/refresh', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/route/remove', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/rule/*', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/rule/create', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/rule/delete', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/rule/index', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/rule/update', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/rule/view', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/user/*', 2, NULL, NULL, NULL, 1545208171, 1545208171);
-INSERT INTO `auth_item` VALUES ('/adminh/user/activate', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/user/captcha', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/user/change-password', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/user/delete', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/user/index', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/user/login', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/user/logout', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/user/request-password-reset', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/user/reset-password', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/user/signup', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/adminh/user/view', 2, NULL, NULL, NULL, 1545208170, 1545208170);
-INSERT INTO `auth_item` VALUES ('/debug/*', 2, NULL, NULL, NULL, 1545208171, 1545208171);
-INSERT INTO `auth_item` VALUES ('/debug/default/*', 2, NULL, NULL, NULL, 1545208171, 1545208171);
-INSERT INTO `auth_item` VALUES ('/debug/default/db-explain', 2, NULL, NULL, NULL, 1545208171, 1545208171);
-INSERT INTO `auth_item` VALUES ('/debug/default/download-mail', 2, NULL, NULL, NULL, 1545208171, 1545208171);
-INSERT INTO `auth_item` VALUES ('/debug/default/index', 2, NULL, NULL, NULL, 1545208171, 1545208171);
-INSERT INTO `auth_item` VALUES ('/debug/default/toolbar', 2, NULL, NULL, NULL, 1545208171, 1545208171);
-INSERT INTO `auth_item` VALUES ('/debug/default/view', 2, NULL, NULL, NULL, 1545208171, 1545208171);
-INSERT INTO `auth_item` VALUES ('/debug/user/*', 2, NULL, NULL, NULL, 1545208171, 1545208171);
-INSERT INTO `auth_item` VALUES ('/debug/user/reset-identity', 2, NULL, NULL, NULL, 1545208171, 1545208171);
-INSERT INTO `auth_item` VALUES ('/debug/user/set-identity', 2, NULL, NULL, NULL, 1545208171, 1545208171);
-INSERT INTO `auth_item` VALUES ('/gii/*', 2, NULL, NULL, NULL, 1545208171, 1545208171);
-INSERT INTO `auth_item` VALUES ('/gii/default/*', 2, NULL, NULL, NULL, 1545208171, 1545208171);
-INSERT INTO `auth_item` VALUES ('/gii/default/action', 2, NULL, NULL, NULL, 1545208171, 1545208171);
-INSERT INTO `auth_item` VALUES ('/gii/default/diff', 2, NULL, NULL, NULL, 1545208171, 1545208171);
-INSERT INTO `auth_item` VALUES ('/gii/default/index', 2, NULL, NULL, NULL, 1545208171, 1545208171);
-INSERT INTO `auth_item` VALUES ('/gii/default/preview', 2, NULL, NULL, NULL, 1545208171, 1545208171);
-INSERT INTO `auth_item` VALUES ('/gii/default/view', 2, NULL, NULL, NULL, 1545208171, 1545208171);
+INSERT INTO `auth_item` VALUES ('/adminh/*', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/adminh/assignment/*', 2, NULL, NULL, NULL, 1545818335, 1545818335);
+INSERT INTO `auth_item` VALUES ('/adminh/assignment/assign', 2, NULL, NULL, NULL, 1545818335, 1545818335);
+INSERT INTO `auth_item` VALUES ('/adminh/assignment/index', 2, NULL, NULL, NULL, 1545818335, 1545818335);
+INSERT INTO `auth_item` VALUES ('/adminh/assignment/revoke', 2, NULL, NULL, NULL, 1545818335, 1545818335);
+INSERT INTO `auth_item` VALUES ('/adminh/assignment/view', 2, NULL, NULL, NULL, 1545818335, 1545818335);
+INSERT INTO `auth_item` VALUES ('/adminh/base/*', 2, NULL, NULL, NULL, 1545818335, 1545818335);
+INSERT INTO `auth_item` VALUES ('/adminh/default/*', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/default/index', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/logs/*', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/logs/index', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/main/*', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/main/index', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/master/*', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/master/activate', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/master/captcha', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/master/change-password', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/master/delete', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/master/index', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/master/login', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/master/logout', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/master/request-password-reset', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/master/reset-password', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/master/signup', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/master/view', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/menu/*', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/menu/create', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/menu/delete', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/menu/index', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/menu/update', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/menu/view', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/permission/*', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/permission/assign', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/permission/create', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/permission/delete', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/permission/index', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/permission/remove', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/permission/update', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/permission/view', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/role/*', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/adminh/role/assign', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/adminh/role/create', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/role/delete', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/adminh/role/index', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/role/remove', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/adminh/role/update', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/role/view', 2, NULL, NULL, NULL, 1545818336, 1545818336);
+INSERT INTO `auth_item` VALUES ('/adminh/route/*', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/adminh/route/assign', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/adminh/route/create', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/adminh/route/index', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/adminh/route/refresh', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/adminh/route/remove', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/adminh/rule/*', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/adminh/rule/create', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/adminh/rule/delete', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/adminh/rule/index', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/adminh/rule/update', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/adminh/rule/view', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/debug/*', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/debug/default/*', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/debug/default/db-explain', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/debug/default/download-mail', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/debug/default/index', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/debug/default/toolbar', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/debug/default/view', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/debug/user/*', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/debug/user/reset-identity', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/debug/user/set-identity', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/gii/*', 2, NULL, NULL, NULL, 1545818338, 1545818338);
+INSERT INTO `auth_item` VALUES ('/gii/default/*', 2, NULL, NULL, NULL, 1545818338, 1545818338);
+INSERT INTO `auth_item` VALUES ('/gii/default/action', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/gii/default/diff', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/gii/default/index', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/gii/default/preview', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/gii/default/view', 2, NULL, NULL, NULL, 1545818337, 1545818337);
+INSERT INTO `auth_item` VALUES ('/index/*', 2, NULL, NULL, NULL, 1545818338, 1545818338);
+INSERT INTO `auth_item` VALUES ('/index/index', 2, NULL, NULL, NULL, 1545818338, 1545818338);
+INSERT INTO `auth_item` VALUES ('/site/*', 2, NULL, NULL, NULL, 1545818338, 1545818338);
+INSERT INTO `auth_item` VALUES ('/site/error', 2, NULL, NULL, NULL, 1545818338, 1545818338);
+INSERT INTO `auth_item` VALUES ('/site/index', 2, NULL, NULL, NULL, 1545818338, 1545818338);
+INSERT INTO `auth_item` VALUES ('/site/login', 2, NULL, NULL, NULL, 1545818338, 1545818338);
+INSERT INTO `auth_item` VALUES ('/site/logout', 2, NULL, NULL, NULL, 1545818338, 1545818338);
 INSERT INTO `auth_item` VALUES ('admin', 2, '超级管理员', NULL, NULL, 1545096612, 1545096625);
 INSERT INTO `auth_item` VALUES ('超级管理员', 1, '超级管理员', NULL, NULL, 1545096640, 1545096640);
 
@@ -185,6 +192,28 @@ CREATE TABLE `logs`  (
 ) ENGINE = MyISAM AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
+-- Table structure for master
+-- ----------------------------
+DROP TABLE IF EXISTS `master`;
+CREATE TABLE `master`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `auth_key` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `password_hash` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `password_reset_token` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `status` smallint(6) NOT NULL DEFAULT 10,
+  `created_at` int(11) NOT NULL,
+  `updated_at` int(11) NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of master
+-- ----------------------------
+INSERT INTO `master` VALUES (1, 'admin', 'b4Jj789yYlrTB-NA8OPO_aOOCJNYWirK', '$2y$13$Qo9cAy.e277FBwxx4kPEquba2SLdVkVJerDYj192eyZ8t6d1me1SS', NULL, '690550322@QQ.com', 10, 1535300311, 1537031768);
+
+-- ----------------------------
 -- Table structure for menu
 -- ----------------------------
 DROP TABLE IF EXISTS `menu`;
@@ -204,7 +233,7 @@ CREATE TABLE `menu`  (
 -- Records of menu
 -- ----------------------------
 INSERT INTO `menu` VALUES (1, '权限管理', NULL, NULL, 99, 0x7B2269636F6E223A202266612066612D746163686F6D65746572222C202276697369626C65223A20747275657D);
-INSERT INTO `menu` VALUES (2, '管理员列表', 1, '/adminh/user/index', 1, NULL);
+INSERT INTO `menu` VALUES (2, '管理员列表', 1, '/adminh/master/index', 1, NULL);
 INSERT INTO `menu` VALUES (3, '分配列表', 1, '/adminh/assignment/index', 2, NULL);
 INSERT INTO `menu` VALUES (4, '角色列表', 1, '/adminh/role/index', 3, NULL);
 INSERT INTO `menu` VALUES (5, '权限列表', 1, '/adminh/permission/index', 4, NULL);
@@ -231,27 +260,5 @@ INSERT INTO `migration` VALUES ('m140506_102106_rbac_init', 1545042804);
 INSERT INTO `migration` VALUES ('m140602_111327_create_menu_table', 1545042672);
 INSERT INTO `migration` VALUES ('m160312_050000_create_user', 1545042672);
 INSERT INTO `migration` VALUES ('m170907_052038_rbac_add_index_on_auth_assignment_user_id', 1545042804);
-
--- ----------------------------
--- Table structure for user
--- ----------------------------
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE `user`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `auth_key` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `password_hash` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `password_reset_token` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
-  `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `status` smallint(6) NOT NULL DEFAULT 10,
-  `created_at` int(11) NOT NULL,
-  `updated_at` int(11) NOT NULL,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Compact;
-
--- ----------------------------
--- Records of user
--- ----------------------------
-INSERT INTO `user` VALUES (1, 'admin', 'b4Jj789yYlrTB-NA8OPO_aOOCJNYWirK', '$2y$13$Qo9cAy.e277FBwxx4kPEquba2SLdVkVJerDYj192eyZ8t6d1me1SS', NULL, '690550322@QQ.com', 10, 1535300311, 1537031768);
 
 SET FOREIGN_KEY_CHECKS = 1;

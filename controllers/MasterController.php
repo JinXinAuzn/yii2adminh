@@ -9,8 +9,8 @@ use jx\adminh\models\form\Login;
 use jx\adminh\models\form\PasswordResetRequest;
 use jx\adminh\models\form\ResetPassword;
 use jx\adminh\models\form\Signup;
-use jx\adminh\models\searchs\User as UserSearch;
-use jx\adminh\models\User;
+use jx\adminh\models\searchs\Master as UserSearch;
+use jx\adminh\models\Master;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\base\UserException;
@@ -20,9 +20,9 @@ use yii\web\NotFoundHttpException;
 use yii\captcha\CaptchaAction;
 
 /**
- * User controller
+ * Master controller
  */
-class UserController extends BaseController
+class MasterController extends BaseController
 {
     private $_oldMailPath;
 
@@ -70,7 +70,7 @@ class UserController extends BaseController
     }
 
     /**
-     * Lists all User models.
+     * Lists all Master models.
      * @return mixed
      */
     public function actionIndex()
@@ -85,7 +85,7 @@ class UserController extends BaseController
     }
 
     /**
-     * Displays a single User model.
+     * Displays a single Master model.
      * @param integer $id
      * @return mixed
      */
@@ -97,7 +97,7 @@ class UserController extends BaseController
     }
 
     /**
-     * Deletes an existing User model.
+     * Deletes an existing Master model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -141,7 +141,7 @@ class UserController extends BaseController
     }
 
     /**
-     * Signup new user
+     * Signup new master
      * @return string
      */
     public function actionSignup()
@@ -220,7 +220,7 @@ class UserController extends BaseController
     }
 
     /**
-     * Activate new user
+     * Activate new master
      * @param integer $id
      * @return type
      * @throws UserException
@@ -228,7 +228,7 @@ class UserController extends BaseController
      */
     public function actionActivate($id)
     {
-        /* @var $user User */
+        /* @var $user Master */
         $user = $this->findModel($id);
         if ($user->status == UserStatus::INACTIVE) {
             $user->status = UserStatus::ACTIVE;
@@ -243,15 +243,15 @@ class UserController extends BaseController
     }
 
     /**
-     * Finds the User model based on its primary key value.
+     * Finds the Master model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return User the loaded model
+     * @return Master the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = User::findOne($id)) !== null) {
+        if (($model = Master::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

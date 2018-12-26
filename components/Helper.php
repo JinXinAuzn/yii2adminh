@@ -67,7 +67,7 @@ class Helper
     }
 
     /**
-     * Get assigned routes of user.
+     * Get assigned routes of master.
      * @param integer $userId
      * @return array
      */
@@ -97,7 +97,7 @@ class Helper
     }
 
     /**
-     * Check access route for user.
+     * Check access route for master.
      * @param string|array $route
      * @param integer|User $user
      * @return boolean

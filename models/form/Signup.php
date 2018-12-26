@@ -2,7 +2,7 @@
 namespace jx\adminh\models\form;
 
 use jx\adminh\components\UserStatus;
-use jx\adminh\models\User;
+use jx\adminh\models\Master;
 use Yii;
 use yii\base\Model;
 use yii\helpers\ArrayHelper;
@@ -22,7 +22,7 @@ class Signup extends Model
      */
     public function rules()
     {
-        $class = Yii::$app->getUser()->identityClass ? : 'jx\adminh\models\User';
+        $class = Yii::$app->getUser()->identityClass ? : 'jx\adminh\models\Master';
         return [
             ['username', 'filter', 'filter' => 'trim'],
             ['username', 'required'],
@@ -55,18 +55,18 @@ class Signup extends Model
 		];
 	}
     /**
-     * Signs user up.
+     * Signs master up.
      *
-     * @return User|null the saved model or null if saving fails
+     * @return Master|null the saved model or null if saving fails
      */
     public function signup()
     {
         if ($this->validate()) {
-            $class = Yii::$app->getUser()->identityClass ? : 'jx\adminh\models\User';
+            $class = Yii::$app->getUser()->identityClass ? : 'jx\adminh\models\Master';
             $user = new $class();
             $user->username = $this->username;
             $user->email = $this->email;
-            $user->status = ArrayHelper::getValue(Yii::$app->params, 'user.defaultStatus', UserStatus::ACTIVE);
+            $user->status = ArrayHelper::getValue(Yii::$app->params, 'master.defaultStatus', UserStatus::ACTIVE);
             $user->setPassword($this->password);
             $user->generateAuthKey();
             if ($user->save()) {

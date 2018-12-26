@@ -4,7 +4,7 @@ namespace jx\adminh\models\form;
 
 use Yii;
 use yii\base\Model;
-use jx\adminh\models\User;
+use jx\adminh\models\Master;
 
 /**
  * Login form
@@ -29,7 +29,7 @@ class Login extends Model
             ['rememberMe', 'boolean'],
             // password is validated by validatePassword()
             ['password', 'validatePassword'],
-	        ['verifyCode', 'captcha', 'captchaAction' => 'adminh/user/captcha'],
+	        ['verifyCode', 'captcha', 'captchaAction' => 'adminh/master/captcha'],
         ];
     }
 
@@ -51,9 +51,9 @@ class Login extends Model
     }
 
     /**
-     * Logs in a user using the provided username and password.
+     * Logs in a master using the provided username and password.
      *
-     * @return boolean whether the user is logged in successfully
+     * @return boolean whether the master is logged in successfully
      */
     public function login()
     {
@@ -65,14 +65,14 @@ class Login extends Model
     }
 
     /**
-     * Finds user by [[username]]
+     * Finds master by [[username]]
      *
-     * @return User|null
+     * @return Master|null
      */
     public function getUser()
     {
         if ($this->_user === false) {
-            $class = Yii::$app->getUser()->identityClass ? : 'jx\adminh\models\User';
+            $class = Yii::$app->getUser()->identityClass ? : 'jx\adminh\models\Master';
             $this->_user = $class::findByUsername($this->username);
         }
 

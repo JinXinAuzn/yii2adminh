@@ -5,7 +5,7 @@ use yii\grid\GridView;
 use jx\adminh\components\Helper;
 
 /* @var $this yii\web\View */
-/* @var $searchModel jx\adminh\models\searchs\User */
+/* @var $searchModel jx\adminh\models\searchs\Master */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('rbac-admin', 'Users');

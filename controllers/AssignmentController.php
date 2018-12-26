@@ -31,7 +31,7 @@ class AssignmentController extends BaseController
         parent::init();
         if ($this->userClassName === null) {
             $this->userClassName = Yii::$app->getUser()->identityClass;
-            $this->userClassName = $this->userClassName ? : 'jx\adminh\models\User';
+            $this->userClassName = $this->userClassName ? : 'jx\adminh\models\Master';
         }
     }
 

@@ -3,7 +3,7 @@
 namespace jx\adminh\models\form;
 
 use jx\adminh\components\UserStatus;
-use jx\adminh\models\User;
+use jx\adminh\models\Master;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\base\Model;
@@ -17,7 +17,7 @@ class ResetPassword extends Model
     public $password;
     public $retypePassword;
     /**
-     * @var User
+     * @var Master
      */
     private $_user;
 
@@ -34,7 +34,7 @@ class ResetPassword extends Model
             throw new InvalidParamException('Password reset token cannot be blank.');
         }
         // check token
-        $class = Yii::$app->getUser()->identityClass ?: 'jx\adminh\models\User';
+        $class = Yii::$app->getUser()->identityClass ?: 'jx\adminh\models\Master';
         if (static::isPasswordResetTokenValid($token)) {
             $this->_user = $class::findOne([
                     'password_reset_token' => $token,
@@ -84,7 +84,7 @@ class ResetPassword extends Model
         if (empty($token)) {
             return false;
         }
-        $expire = ArrayHelper::getValue(Yii::$app->params, 'user.passwordResetTokenExpire', 24 * 3600);
+        $expire = ArrayHelper::getValue(Yii::$app->params, 'master.passwordResetTokenExpire', 24 * 3600);
         $parts = explode('_', $token);
         $timestamp = (int) end($parts);
         return $timestamp + $expire >= time();

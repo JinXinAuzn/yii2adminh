@@ -5,7 +5,7 @@ use yii\widgets\DetailView;
 use jx\adminh\components\Helper;
 
 /* @var $this yii\web\View */
-/* @var $model jx\adminh\models\User */
+/* @var $model jx\adminh\models\Master */
 
 $this->title = $model->username;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('rbac-admin', 'Users'), 'url' => ['index']];

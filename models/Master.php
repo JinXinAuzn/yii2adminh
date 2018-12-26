@@ -11,7 +11,7 @@ use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;
 
 /**
- * User model
+ * Master model
  *
  * @property integer $id
  * @property string $username
@@ -26,7 +26,7 @@ use yii\web\IdentityInterface;
  *
  * @property UserProfile $profile
  */
-class User extends ActiveRecord implements IdentityInterface
+class Master extends ActiveRecord implements IdentityInterface
 {
     const STATUS_INACTIVE = 0;
     const STATUS_ACTIVE = 10;
@@ -89,7 +89,7 @@ class User extends ActiveRecord implements IdentityInterface
     }
 
     /**
-     * Finds user by username
+     * Finds master by username
      *
      * @param string $username
      * @return static|null
@@ -100,7 +100,7 @@ class User extends ActiveRecord implements IdentityInterface
     }
 
     /**
-     * Finds user by password reset token
+     * Finds master by password reset token
      *
      * @param string $token password reset token
      * @return static|null
@@ -128,7 +128,7 @@ class User extends ActiveRecord implements IdentityInterface
         if (empty($token)) {
             return false;
         }
-        $expire = Yii::$app->params['user.passwordResetTokenExpire'];
+        $expire = Yii::$app->params['master.passwordResetTokenExpire'];
         $parts = explode('_', $token);
         $timestamp = (int) end($parts);
         return $timestamp + $expire >= time();
@@ -162,7 +162,7 @@ class User extends ActiveRecord implements IdentityInterface
      * Validates password
      *
      * @param string $password password to validate
-     * @return boolean if password provided is valid for current user
+     * @return boolean if password provided is valid for current master
      */
     public function validatePassword($password)
     {

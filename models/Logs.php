@@ -96,6 +96,6 @@ class Logs extends ActiveRecord
 	 */
 	public function getMaster()
 	{
-		return $this->hasOne(User::className(), ['id' => 'master_id']);
+		return $this->hasOne(Master::className(), ['id' => 'master_id']);
 	}
 }
