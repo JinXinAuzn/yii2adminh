@@ -201,11 +201,6 @@ body.body-small .navbar-top-links li:last-child {
 	transition: all 0.5s;
 }
 
-.nav > li.active {
-	border-left: 2px solid #19aa8d;
-	background: #293846;
-}
-
 .nav.nav-second-level > li.active {
 	border: none;
 }
@@ -7953,4 +7948,10 @@ body.skin-3 {
 	color: #fff;
 }
 
-
+.nav > li{
+	border-left: 2px solid transparent;
+}
+.nav > li.active {
+	background-color: #243747;
+	border-left-color: #3e84b0;
+}
