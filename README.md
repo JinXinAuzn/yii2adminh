@@ -62,9 +62,9 @@ return [
             'csrfParam' => '_csrf-backend',
         ],
         'user' => [
-	        'identityClass' => 'jx\adminh\models\User',
+	        'identityClass' => 'jx\adminh\models\Master',
 	        'enableAutoLogin' => true,
-	        'loginUrl' => ['/adminh/user/login'],
+	        'loginUrl' => ['/adminh/master/login'],
 	        'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
         ],
         'session' => [
@@ -123,15 +123,17 @@ return [
 		    ],
 	    ],
     ],
-	'aliases' => [
+    
+/*	'aliases' => [
 		'@jx/adminh' => '@backend/runtime/tmp-extensions/yii2-adminh',
-	],
+	],*/
+	
 	'as access' => [
 		'class' => 'jx\adminh\components\AccessControl',
 		'allowActions' => [
-			'adminh/user/captcha',
-			'adminh/user/login',
-			'adminh/user/logout',
+			'adminh/master/captcha',
+			'adminh/master/login',
+			'adminh/master/logout',
 //			    '*'
 		]
 	],
