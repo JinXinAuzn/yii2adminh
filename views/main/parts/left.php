@@ -7,7 +7,7 @@ use jx\adminh\components\MenuHelper;
  * @return array
  */
 $callback = function ($menu) {
-	$data = json_decode($menu['data'], true);
+	$data = json_decode($menu['data'], true) ? json_decode($menu['data'], true) : ['icon' => 'fa fa-list', 'visible' => true];
 	$items = $menu['children'];
 	$return = [
 		'label' => $menu['name'],
