@@ -30,7 +30,7 @@ AppAsset::register($this);
 				'homeLink' => [
 					'label' => '首页',
 					'url' => '#',
-					'class'=>'home-refresh'
+					'class' => 'home-refresh'
 				],
 				'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 				'options' => ['class' => 'pull-left breadcrumb home-url']
@@ -48,6 +48,7 @@ AppAsset::register($this);
 		</section><!-- /.content -->
 	</div><!-- /.content-wrapper -->
 </div>
+<?= $this->render('./modal') ?>
 <?php $this->endBody() ?>
 </body>
 </html>

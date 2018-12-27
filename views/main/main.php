@@ -33,8 +33,6 @@ AdminHAsset::register($this);
 
 	<?= $this->render('parts/sidebar') ?>
 
-	<?= $this->render('parts/modal') ?>
-
 </div>
 <?php $this->endBody() ?>
 </body>
