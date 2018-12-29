@@ -36,9 +36,6 @@ class Signup extends Model
 
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
-
-            ['retypePassword', 'required'],
-            ['retypePassword', 'compare', 'compareAttribute' => 'password'],
         ];
     }
 	/**

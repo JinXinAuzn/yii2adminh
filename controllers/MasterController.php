@@ -116,7 +116,7 @@ class MasterController extends BaseController
     public function actionLogin()
     {
 	    if (!Yii::$app->getUser()->isGuest) {
-		    return $this->goHome();
+		    return $this->redirect(['index']);
 	    }
 	    $model = new Login();
 	    if ($model->load(Yii::$app->getRequest()->post()) && $model->login()) {
@@ -137,7 +137,7 @@ class MasterController extends BaseController
     {
 	    AdminLog::addLog(2);
 	    Yii::$app->getUser()->logout();
-	    return $this->goHome();
+	    return $this->redirect(['index']);
     }
 
     /**
@@ -149,7 +149,7 @@ class MasterController extends BaseController
         $model = new Signup();
         if ($model->load(Yii::$app->getRequest()->post())) {
             if ($user = $model->signup()) {
-                return $this->goHome();
+	            return $this->redirect(['index']);
             }
         }
 
@@ -169,7 +169,7 @@ class MasterController extends BaseController
             if ($model->sendEmail()) {
 	            $this->showMessage('success', 'Check your email for further instructions.');
 
-                return $this->goHome();
+	            return $this->redirect(['index']);
             } else {
 	            $this->showMessage('error', 'Sorry, we are unable to reset password for email provided.');
             }
@@ -195,7 +195,7 @@ class MasterController extends BaseController
         if ($model->load(Yii::$app->getRequest()->post()) && $model->validate() && $model->resetPassword()) {
 	        $this->showMessage('success', 'New password was saved.');
 
-            return $this->goHome();
+	        return $this->redirect(['index']);
         }
 
         return $this->render('resetPassword', [
@@ -211,7 +211,7 @@ class MasterController extends BaseController
     {
         $model = new ChangePassword();
         if ($model->load(Yii::$app->getRequest()->post()) && $model->change()) {
-            return $this->goHome();
+	        return $this->redirect(['index']);
         }
 
         return $this->render('change-password', [
@@ -233,13 +233,16 @@ class MasterController extends BaseController
         if ($user->status == UserStatus::INACTIVE) {
             $user->status = UserStatus::ACTIVE;
             if ($user->save()) {
-                return $this->goHome();
+	            return $this->redirect(['index']);
             } else {
                 $errors = $user->firstErrors;
                 throw new UserException(reset($errors));
             }
+        }else{
+	        $user->status = Master::STATUS_INACTIVE;
+	        $user->save();
         }
-        return $this->goHome();
+	    return $this->redirect(['index']);
     }
 
     /**
