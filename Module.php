@@ -51,6 +51,10 @@ class Module extends \yii\base\Module
      * Its used when `layout` set to 'left-menu', 'right-menu' or 'top-menu'.
      */
     public $mainLayout = '@jx/adminh/views/layouts/main.php';
+	/**
+	 * 自定义国际化
+	 */
+	public $i18n = '@jx/adminh/messages';
     /**
      * @var array
      * @see [[menus]]
@@ -95,7 +99,7 @@ class Module extends \yii\base\Module
             Yii::$app->i18n->translations['rbac-admin'] = [
                 'class' => 'yii\i18n\PhpMessageSource',
                 'sourceLanguage' => 'en',
-                'basePath' => '@jx/adminh/messages',
+                'basePath' => $this->i18n,
             ];
         }
 
